@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.container {
+    height: 100%;
+    background-color: black;
+}
+
+.result {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    height: 20%;
+}
+
+.result span {
+    margin: 20px;
+    font-size: 5vw; /* Responsive font size */
+    justify-self: flex-end;
+}
+
+.buttons {
+    width: 100%;
+    height: 80%;
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw; /* Responsive font size */
+    color: white;
+    height: 20vw; /* Responsive button height */
+    width: 20vw; /* Responsive button width */
+    border-radius: 50%;
+    padding: 2vw;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+}
+
+.persent {
+    background-color: #A5A5A5;
+    border: none;
+    color: black;
+}
+
+.item1 {
+    background-color: #A5A5A5;
+    border: none;
+    color: white;
+}
+
+.item3 {
+    background-color: #ff9f0a;
+}
+
+.numbres, .comma {
+    background-color: #343434;
+    border: none;
+}
+
+.negative, .clear {
+    color: black;
+}
+
+.zero {
+    background-color: #343434;
+    border: none;
+    width: 40vw; /* Responsive width for zero button */
+    height: 20vw; /* Responsive height for zero button */
+    border-radius: 10vw; /* Responsive border radius for zero button */
+    grid-column: span 2;
+}
+
+#input {
+    display: block;
+    font-size: 5vw; /* Responsive font size */
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: right;
+    margin-right: 5%;
+    width: 90%;
+    margin-top: 2vw; /* Adjust margin for better spacing on small screens */
+}
+
+/* Add styles for touch interactions, e.g., button:hover, button:active, etc. */
